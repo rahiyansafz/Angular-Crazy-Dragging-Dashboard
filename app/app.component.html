@@ -1,0 +1,21 @@
+<hello name="{{ name }}"></hello>
+
+
+<gridster [options]="options" *ngIf="loaded">
+
+	<gridster-item [item]="dashboard[0]">
+		<button style="background:blue;color:white">click me 0</button>	<button style="background:blue;color:white">click me 0</button>	<button style="background:blue;color:white">click me 0</button>	<button style="background:blue;color:white">click me 0</button>	<button style="background:blue;color:white">click me 0</button>	<button style="background:blue;color:white">click me 0</button>
+	</gridster-item>
+	<gridster-item [item]="dashboard[1]">
+		<button>click NOT me 1</button>
+	</gridster-item>
+	<gridster-item [item]="dashboard[2]">
+		<button style="background:lightgreen">click NOT me 2</button>
+	</gridster-item>
+	<gridster-item [item]="dashboard[3]">
+		<button style="background:red">click NOT me 3</button>
+	</gridster-item>
+	<gridster-item [item]="dashboard[4]">
+		<button style="background:yellow">click NOT me 4</button>
+	</gridster-item>
+</gridster>
